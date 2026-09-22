@@ -4,140 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deportivo 19 Fútbol Club</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background:#0A0A0A;
-      color:white;
-    }
-
-    header{
-      height:100vh;
-      background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
-      url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1600&q=80');
-      background-size:cover;
-      background-position:center;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:20px;
-    }
-
-    h1{
-      font-size:70px;
-      color:#2A7BFF;
-      letter-spacing:3px;
-    }
-
-    h2{
-      margin-top:15px;
-      font-size:22px;
-      color:#E5E5E5;
-      font-weight:300;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:35px;
-      padding:15px 35px;
-      background:#2A7BFF;
-      color:white;
-      text-decoration:none;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.3s;
-    }
-
-    .btn:hover{
-      background:#0F5ED7;
-    }
-
-    section{
-      max-width:1100px;
-      margin:auto;
-      padding:70px 20px;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-      margin-top:30px;
-    }
-
-    .card{
-      background:#151515;
-      border:1px solid #222;
-      border-radius:16px;
-      padding:25px;
-      text-align:center;
-    }
-
-    .card h3{
-      color:#2A7BFF;
-      margin-bottom:10px;
-    }
-
-    footer{
-      background:#111;
-      text-align:center;
-      padding:30px;
-      color:#888;
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-  <div>
+<header class="hero">
+  <nav>
     <h1>DEPORTIVO 19</h1>
-    <h2>Más que un club, una familia.</h2>
-    <a href="#club" class="btn">Conocer el club</a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#partidos">Partidos</a></li>
+      <li><a href="#escuela">Escuela</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenido">
+    <h2>Más que un club, una familia</h2>
+    <p>Fútbol femenino • Masculino • Juvenil</p>
+    <button>Unite al Deportivo</button>
   </div>
 </header>
 
-<section id="club">
-
-  <h2 style="text-align:center;font-size:35px;color:white;">Nuestro Club</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>⚽ Masculino</h3>
-      <p>Primera y competencias oficiales.</p>
-    </div>
-
-    <div class="card">
-      <h3>💙 Femenino</h3>
-      <p>Escuela y planteles competitivos.</p>
-    </div>
-
-    <div class="card">
-      <h3>👦 Juveniles</h3>
-      <p>Formación desde los 16 años.</p>
-    </div>
-
-    <div class="card">
-      <h3>🛒 Tienda</h3>
-      <p>Próximamente indumentaria oficial.</p>
-    </div>
-
+<section id="partidos" class="seccion">
+  <h2>Próximo Partido</h2>
+  <div class="card">
+    <h3>DEPOR 19 🆚 Rival</h3>
+    <p>Domingo · 18:00 hs</p>
+    <p>Sede: La Meca</p>
   </div>
+</section>
 
+<section class="seccion oscuro">
+  <h2>Último Resultado</h2>
+  <div class="card">
+    <h3>DEPOR 19 8 - 1 Rival</h3>
+    <p>Goleadora: Sol Molina ⚽⚽⚽</p>
+  </div>
+</section>
+
+<section id="escuela" class="seccion">
+  <h2>Escuela de Fútbol</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Femenino</h3>
+      <p>Lunes y Miércoles</p>
+      <p>20:00 a 21:00 hs</p>
+    </div>
+
+    <div class="card">
+      <h3>Masculino</h3>
+      <p>Lunes y Miércoles</p>
+      <p>20:00 a 21:00 hs</p>
+    </div>
+
+    <div class="card">
+      <h3>Juvenil</h3>
+      <p>16 años en adelante</p>
+      <p>CF Deportivo19</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="seccion oscuro">
+  <h2>Contacto</h2>
+  <p>📞 11 2620-2012</p>
+  <p>📍 Canchas Chiri · Av. Calchaquí 1750</p>
+  <p>Instagram: @cfdeportivo19</p>
 </section>
 
 <footer>
-  © 2026 Deportivo 19 Fútbol Club
+  <h3>DEPORTIVO 19</h3>
+  <p>© 2026 Todos los derechos reservados.</p>
 </footer>
 
 </body>
