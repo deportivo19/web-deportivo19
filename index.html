@@ -1,157 +1,268 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deportivo 19 Fútbol Club</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Deportivo 19 Fútbol Club de Quilmes. Fútbol femenino, masculino y juvenil. Más que un club, una familia.">
+
+  <title>Deportivo 19 Fútbol Club | Quilmes</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">⚽ DEPORTIVO 19</div>
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Deportivo 19, inicio">
+      <img src="assets/escudo-deportivo19.jpeg" alt="" class="logo-escudo">
+      <span>DEPORTIVO <strong>19</strong></span>
+    </a>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#partidos">Partidos</a>
-    <a href="#escuela">Escuela</a>
-    <a href="#sponsors">Sponsors</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#partidos">Partidos</a>
+      <a href="#escuela">Escuela</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<section class="hero" id="inicio">
-  <div class="overlay">
+  <main>
 
-    <h1>Más que un club,<br>una familia.</h1>
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-fondo"></div>
 
-    <p>
-      Somos un club de fútbol amateur dedicado al crecimiento del
-      fútbol femenino, masculino y juvenil de Quilmes.
-    </p>
+      <div class="hero-contenido">
+        <span class="etiqueta">FÚTBOL · PASIÓN · FAMILIA</span>
 
-    <a class="btn" href="#escuela">Sumate al Depor</a>
+        <img
+          src="assets/escudo-deportivo19.jpeg"
+          alt="Escudo oficial del Deportivo 19 Fútbol Club"
+          class="escudo-portada"
+        >
 
-  </div>
-</section>
+        <h1>Más que un club,<br><span>una familia.</span></h1>
 
-<section id="partidos" class="seccion">
+        <p>
+          Somos un club de fútbol amateur dedicado al crecimiento
+          del fútbol femenino, masculino y juvenil de Quilmes.
+        </p>
 
-<h2>Próximo encuentro</h2>
+        <a class="btn" href="#escuela">SUMATE AL DEPOR <span>→</span></a>
 
-<div class="partido">
+        <div class="hero-pie">
+          <span>QUILMES, BUENOS AIRES</span>
+          <span>DESDE EL BARRIO, CON PASIÓN</span>
+        </div>
+      </div>
 
-<div class="equipo">DEPOR 19</div>
+      <div class="hero-decoracion" aria-hidden="true">19</div>
+    </section>
 
-<div class="vs">VS</div>
+    <!-- PRÓXIMO PARTIDO -->
+    <section id="partidos" class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="subtitulo">LA PRÓXIMA CITA</span>
+          <h2>Próximo <span>encuentro</span></h2>
+          <p>Nos preparamos para defender nuestros colores.</p>
+        </div>
 
-<div class="equipo">RIVAL</div>
+        <article class="partido tarjeta">
+          <div class="partido-equipo">
+            <img src="assets/escudo-deportivo19.jpeg" alt="Escudo Deportivo 19">
+            <h3>DEPOR 19</h3>
+          </div>
 
-<p>📍 La Meca</p>
-<p>🕕 Domingo · 18:00 hs</p>
+          <div class="partido-centro">
+            <span class="vs">VS</span>
+            <span class="partido-tipo">PRÓXIMO PARTIDO</span>
+          </div>
 
-</div>
+          <div class="partido-equipo">
+            <div class="escudo-rival">?</div>
+            <h3>RIVAL</h3>
+          </div>
 
-</section>
+          <div class="partido-datos">
+            <p>📍 La Meca</p>
+            <p>🕕 Domingo · 18:00 hs</p>
+          </div>
+        </article>
 
-<section class="seccion oscuro">
+        <p class="aviso">
+          Los datos del encuentro se actualizarán cuando se confirme el partido.
+        </p>
+      </div>
+    </section>
 
-<h2>Último resultado</h2>
+    <!-- ÚLTIMO RESULTADO -->
+    <section class="seccion seccion-oscura">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="subtitulo">ORGULLO DEPORTIVO</span>
+          <h2>Último <span>resultado</span></h2>
+        </div>
 
-<div class="resultado">
+        <article class="resultado tarjeta">
+          <div class="resultado-titulo">
+            <span>DEPORTIVO 19</span>
+            <span class="resultado-marcador">8 <small>—</small> 1</span>
+            <span>RIVAL</span>
+          </div>
 
-<h3>DEPOR 19 8 — 1 RIVAL</h3>
+          <div class="resultado-linea"></div>
 
-<p><strong>Figura:</strong> Sol Molina ⭐</p>
-<p>⚽ Sol Molina x3 · Ayelen Molina x2 · Gisela · Gladys · Dalila</p>
+          <p class="figura">⭐ Figura del partido: <strong>Sol Molina</strong></p>
 
-</div>
+          <p class="goleadoras">
+            ⚽ Sol Molina x3 · Ayelen Molina x2 · Gisela · Gladys · Dalila
+          </p>
+        </article>
 
-</section>
+        <p class="aviso">
+          Resultado de ejemplo del contenido actual. Actualizalo cuando corresponda.
+        </p>
+      </div>
+    </section>
 
-<section id="escuela" class="seccion">
+    <!-- ESCUELA DE FÚTBOL -->
+    <section id="escuela" class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="subtitulo">CRECEMOS JUNTOS</span>
+          <h2>Escuela de <span>Fútbol</span></h2>
+          <p>Un espacio para aprender, entrenar y compartir la pasión por el fútbol.</p>
+        </div>
 
-<h2>Escuela de Fútbol</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-icono">⚽</div>
+            <span class="card-numero">01</span>
+            <h3>Femenino</h3>
+            <p>Entrenamientos para aprender, mejorar y crecer en equipo.</p>
+            <div class="card-detalles">
+              <p><strong>Días:</strong> Lunes y miércoles</p>
+              <p><strong>Horario:</strong> 20:00 a 21:00 hs</p>
+              <p><strong>Sede:</strong> Canchas Chiri</p>
+            </div>
+            <a class="enlace" href="#contacto">Quiero sumarme →</a>
+          </article>
 
-<div class="grid">
+          <article class="card">
+            <div class="card-icono">🏆</div>
+            <span class="card-numero">02</span>
+            <h3>Masculino</h3>
+            <p>Entrenamiento, compañerismo y pasión por nuestros colores.</p>
+            <div class="card-detalles">
+              <p><strong>Días:</strong> Lunes y miércoles</p>
+              <p><strong>Horario:</strong> 20:00 a 21:00 hs</p>
+              <p><strong>Sede:</strong> Canchas Chiri</p>
+            </div>
+            <a class="enlace" href="#contacto">Quiero sumarme →</a>
+          </article>
 
-<div class="card">
+          <article class="card">
+            <div class="card-icono">🔥</div>
+            <span class="card-numero">03</span>
+            <h3>Juvenil</h3>
+            <p>Formación deportiva, aprendizaje y crecimiento personal.</p>
+            <div class="card-detalles">
+              <p><strong>Edad:</strong> Desde los 16 años</p>
+              <p><strong>Institución:</strong> Deportivo 19</p>
+              <p><strong>Consultas:</strong> Por WhatsApp</p>
+            </div>
+            <a class="enlace" href="#contacto">Quiero sumarme →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h3>Femenino</h3>
+    <!-- SPONSORS -->
+    <section id="sponsors" class="seccion seccion-oscura">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="subtitulo">GRACIAS POR ACOMPAÑARNOS</span>
+          <h2>Nuestros <span>Sponsors</span></h2>
+          <p>Las marcas que acompañan el crecimiento del Depor.</p>
+        </div>
 
-<p>Lunes y Miércoles</p>
-<p>20:00 a 21:00 hs</p>
-<p>Canchas Chiri</p>
+        <div class="grid sponsors-grid">
+          <div class="sponsor">TU MARCA AQUÍ</div>
+          <div class="sponsor">TU MARCA AQUÍ</div>
+          <div class="sponsor">TU MARCA AQUÍ</div>
+          <div class="sponsor">TU MARCA AQUÍ</div>
+        </div>
 
-</div>
+        <p class="aviso">
+          Espacios preparados para incorporar los logos de los patrocinadores.
+        </p>
+      </div>
+    </section>
 
-<div class="card">
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="subtitulo">VESTÍ NUESTROS COLORES</span>
+          <h2>Contactate con <span>nosotros</span></h2>
+          <p>¿Querés sumarte a la familia del Deportivo 19? Escribinos.</p>
+        </div>
 
-<h3>Masculino</h3>
+        <div class="contacto tarjeta">
+          <div class="contacto-info">
+            <p><span>📍</span> Canchas Chiri</p>
+            <p>Av. Calchaquí 1750, Quilmes</p>
+            <p><span>📞</span> 11 2620-2012</p>
+            <p><span>📷</span> Instagram: @cfdeportivo19</p>
+          </div>
 
-<p>Lunes y Miércoles</p>
-<p>20:00 a 21:00 hs</p>
-<p>Canchas Chiri</p>
+          <a
+            class="btn"
+            href="https://wa.me/541126202012"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ESCRIBINOS POR WHATSAPP <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-</div>
+  </main>
 
-<div class="card">
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <img
+      src="assets/escudo-deportivo19.jpeg"
+      alt="Escudo Deportivo 19"
+      class="footer-escudo"
+    >
 
-<h3>Juvenil</h3>
+    <h3>DEPORTIVO 19 FÚTBOL CLUB</h3>
+    <p>Más que un club, una familia.</p>
 
-<p>Desde los 16 años</p>
-<p>CF Deportivo19</p>
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/cfdeportivo19/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+      <a href="https://wa.me/541126202012" target="_blank" rel="noopener noreferrer">
+        WhatsApp
+      </a>
+    </div>
 
-</div>
-
-</div>
-
-</section>
-
-<section id="sponsors" class="seccion oscuro">
-
-<h2>Nuestros Sponsors</h2>
-
-<div class="grid">
-
-<div class="sponsor">SPONSOR</div>
-<div class="sponsor">SPONSOR</div>
-<div class="sponsor">SPONSOR</div>
-<div class="sponsor">SPONSOR</div>
-
-</div>
-
-</section>
-
-<section id="contacto" class="seccion">
-
-<h2>Contacto</h2>
-
-<div class="contacto">
-
-<p>📍 Canchas Chiri</p>
-<p>Av. Calchaquí 1750</p>
-
-<p>📞 11 2620-2012</p>
-
-<p>📷 Instagram: @cfdeportivo19</p>
-
-<a class="btn" href="https://wa.me/541126202012">Enviar WhatsApp</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>DEPORTIVO 19 FÚTBOL CLUB</h3>
-
-<p>© 2026 Todos los derechos reservados.</p>
-
-</footer>
+    <p class="copyright">© 2026 Deportivo 19 Fútbol Club. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
+
