@@ -130,14 +130,10 @@ background-repeat: no-repeat;
 
 
 .hero-fondo {
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  background:
-    linear-gradient(90deg, transparent 49.8%, rgba(255,255,255,0.025) 50%, transparent 50.2%),
-    linear-gradient(0deg, transparent 49.8%, rgba(255,255,255,0.025) 50%, transparent 50.2%);
-  background-size: 65px 65px;
-  mask-image: linear-gradient(to bottom, black, transparent 95%);
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    background: transparent;
 }
 
 .hero::before {
